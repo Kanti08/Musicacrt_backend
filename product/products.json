@@ -1,0 +1,16 @@
+// [
+//   {
+//     "id": 1,
+//     "title": "Product 1",
+//     "description": "Description of product 1",
+//     "price": 10.99,
+//     "imageUrl": "https://th.bing.com/th/id/OIP.24T00MDK-RUhFnm1Do5PFwHaFj?w=210&h=180&c=7&r=0&o=5&pid=1.7"
+//   },
+//   {
+//     "id": 2,
+//     "title": "Product 2",
+//     "description": "Description of product 2",
+//     "price": 19.99,
+//     "imageUrl": "https://th.bing.com/th/id/OIP.QVBY30VqTi-tlYt_BaoGqAHaEo?rs=1&pid=ImgDetMain"
+//   }
+// ]
