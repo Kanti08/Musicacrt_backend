@@ -29,6 +29,16 @@ app.use((req,res)=>{
         message:"this is home route"
     });
 });
+
+// Routes
+app.get('/', (req, res) => {
+  res.send('Hello World!');
+});
+
+// Health route
+app.get('/health', (req, res) => {
+  res.json({ status: 'UP' });
+});
  
 
 const port = process.env.port || 8001;

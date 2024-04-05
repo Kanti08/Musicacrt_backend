@@ -1,8 +1,8 @@
 const express = require('express');
 const router = express.Router();
-const Product = require('../models/product')
+// const Product = require('../models/product')
 
-const product = [
+const products = [
     // {
     //     id: 1,
     //     title: "Product 1",
@@ -265,17 +265,17 @@ const product = [
 
 
 router.get('/product', (req, res) => {
-    res.json(product);
+    res.json(products);
 });
 
-router.get('/product/:id', (req, res) => {
-    const productId = parseInt(req.params.id);
-    const product = product.find(product => product.id === productId);
+router.get('/product/:productId', (req, res) => {
+    const productId = parseInt(req.params.productId); // Use req.params.productId instead of req.params.id
+    const product = products.find(product => product.id === productId); // Assuming 'products' is your array of products
     if (product) {
-        res.json(product);
+        res.json(product); // Change 'products' to 'product'
     } else {
         res.status(404).json({ error: 'Product not found' });
-    }
+    } 
 });
 // router.get('/product', async (req, res) => {
 //     try {
