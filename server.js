@@ -24,6 +24,11 @@ app.use('/api/products', productsRoutes);
 app.use("/api/v1/auth", authRoutes);
 app.use('/api/cart', cartRoutes);
 app.use('/api/order',order);
+app.use((req,res)=>{
+    res.status(404).json({
+        message:"this is home route"
+    });
+});
  
 
 const port = process.env.port || 8001;

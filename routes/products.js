@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const Product = require('../models/product')
 
-const products = [
+const product = [
     // {
     //     id: 1,
     //     title: "Product 1",
